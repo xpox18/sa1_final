@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="image/png" href="preview.png"/>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="this is our Pharmacy  page ">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Form page</title>
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "successfully registered.";
+        }
+        
+    </script>
+</head>
+<body>
+    <style>
+
+body{
+  background-image: url("back1.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: Arial;
+            font-size: 17px;
+        }
+        #project {
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            text-align: center;
+        }
+        .content {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            bottom: 10;
+            background: rgba(0, 0, 0, 0);
+            color: #f1f1f1;
+            width: 100%;
+            padding: 10%;
+        }
+
+        .form-style {
+            background-color: rgba(0, 0, 0, 0.5);
+            background-attachment: scroll;
+            text-align: center;
+            width: 50%;
+            margin-left: 200px;
+            height: 900px;
+            justify-content: center;
+            border-radius: 15px;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: bolder;
+
+        }
+
+
+        .scolor {
+            background-color: #e9eedd;
+            border-color: rgb(54, 1, 25);
+            size: 15px;
+            color: #133844;
+            padding: 10px;
+            font size: 20px;
+            padding: 5px;
+
+        }
+
+        .ncolor {
+            background-color: #e9eedd;
+            border-color: rgb(1, 54, 27);
+            size: 15px;
+            color: black;
+            padding: 10px;
+            font size: 20px;
+            padding: 5px;
+
+        }
+
+        .word {
+            background-color: rgb(255, 255, 255, 0.6);
+
+            color: #41252a;
+            padding: 5px;
+            font size: 10px;
+        }
+
+
+        .btn {
+
+            color: #204413;
+            padding: 6px;
+            background-image: ;
+            width: 80px;
+        }
+
+        button {
+        background-color: beige;
+            background-size: 90%;
+
+
+        }
+    </style>
+    </head>
+    <div class="div.1">
+
+        <body>
+            
+            <div class="content">
+                <form class="form-style" name="form 1" action="" method="get" novalidate target="_blank">
+                    <div>
+                        <br>
+                        <label class="word" for="fn">First name:</label><br>
+                        <input type="text" required placeholder="please inter your First name " class="scolor" id="fn"
+                            autofocus name="fname" value=""><br>
+                    </div>
+                    <br>
+                    <div>
+                        <label class="word" for="ln">Last name:</label><br>
+                        <input type="text" required placeholder="please inter your Last name " class="scolor" id="ln"
+                            name="lname" value=""><br>
+                    </div>
+                    <br>
+                    <div>
+                        <label class="word" for="fname"> Age:</label><br>
+                        <input type="number" required placeholder="please inter your Age" class="scolor" id="fname"
+                            name="number" value="" min="10" max="120"><br>
+                    </div>
+                    <br>
+                    <div>
+                        <label class="word" for="Birthday"> Birthday:</label><br>
+                        <input type="date" placeholder="please inter your Birthday " class="scolor" />
+                    </div>
+                    <br>
+                    <div>
+                        <label class="word" for="add">Address:</label><br>
+                        <input type="text" required placeholder="please inter your Address " class="scolor" id="add"
+                            name="lname" value="">
+                        <br>
+                    </div>
+                    <br>
+                    <div>
+                        <label class="word" for="num">Number: </label><br>
+                        <input type="number" required placeholder="please inter your password " class="scolor" id="num"
+                            name="user num" value="">
+                        <br>
+                    </div>
+                    <br>
+                    <label class="word">Gender: </label>
+                    <div>
+                        <br>
+                        <input id="m" type="radio" name="os" value="male" checked />
+                        <label for="m">male</label>
+                    </div>
+                    <br>
+                    <div>
+                        <input id="fm" type="radio" name="os" value="female" checked />
+                        <label for="fm">female</label>
+                    </div>
+                    <br>
+
+                    <div>
+                        <br>
+                        <div>
+                            <label class="word" for="add">language:</label>
+                            <br>
+                        </div> <br>
+                        <div>
+                            <select name="language" id="language" class="ncolor">
+                        </div><br>
+                        <div>
+                            <option value="">العربيَّة</option>
+                            <option value="">English</option>
+                            <option value="">Deutsch</option>
+                            <option value="">Français</option>
+                            <option value="">Italiano</option>
+                            <option value="">Türkçe</option>
+                            <option value="">Español</option>
+                            <option value="">Русский</option>
+                            <option value="">日本語</option>
+                            <option value="">Malaysia </option>
+                            <option value="">فارسی</option>
+                            <option value="">한국어</option>
+                            </select>
+                        </div><br>
+                        <div>
+                            <label class="word" for="country">Country:</label>
+                        </div><br>
+                        <div>
+                            <select name="country" id="country" class="ncolor">
+                        </div><br>
+                        <div>
+                            <option value="">مصر</option>
+                            <option value="">السعودية</option>
+                            <option value="">فلسطين</option>
+                            <option value="">الجزائر</option>
+                            <option value="">المغرب</option>
+                            <option value="">تونس</option>
+                            <option value="">عُمان</option>
+                            <option value="">ليبيا</option>
+                            <option value="">لبنان</option>
+                            <option value="">سوريا </option>
+                            <option value="">قطر</option>
+                            <option value="">الامارات</option>
+                            <option value="">السودان</option>
+                            <option value="">الأردن</option>
+                            <option value="">اليمن</option>
+                            <option value="">الكويت</option>
+                            <option value="">الصومال</option>
+                            <option value="">موريتانيا</option>
+                            <option value="">البحرين</option>
+                            <option value="">جزر القمر</option>
+                            <option value="">العراق</option>
+                            <option value="">United States of America </option>
+                            <option value="">United Kingdom</option>
+                            <option value="">Australia</option>
+                            <option value="">Canada</option>
+                            <option value="">Deutschland</option>
+                            <option value="">La France</option>
+                            <option value="">Regno d'Italia</option>
+                            <option value="">Türkiye</option>
+                            <option value="">España</option>
+                            <option value="">Россия</option>
+                            <option value="">日本</option>
+                            <option value="">Malaysia </option>
+                            <option value="">إيران</option>
+                            <option value="">한국</option>
+                            </select>
+                        </div><br>
+                        <div>
+                            <button class="btn" value="1" name="login" data-testid="royal_login_button" type="submit"
+                                id="u_0_j_R9">
+                                Reset <img class="im" src="preview.png" alt="" margin-left="50px"
+                                    width="19" height="16">
+                            </button>
+                            <button type="button" class="btn" onclick="myFunction()"><a href="../../Pharmacy/home page file/Home page.html">Submit</a><img class="im"
+                                    src="preview.png" alt="" padding="4px" width="19" height="16"></button>
+                            <p id="demo"></p>
+                            <br>
+                            <div>
+                            </div>
+                </form>
+        </body>
+    </div>
+</html>
